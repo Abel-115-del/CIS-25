@@ -1,0 +1,17 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	string nameitem;
+		int quanity;
+		double cost;
+
+		cout << "Welcome customer! what item are you purchasing" << endl; 
+		cin >> nameitem;
+		cout << "how much would you like to purchase?" << endl;
+		cin >> quanity;
+		cout << "What is the cost of the item" << endl;
+		cin >> cost;
+
+		cout << "the total cost of " << quanity << " " << nameitem << " is " << quanity * cost;
