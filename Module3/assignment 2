@@ -15,3 +15,4 @@ int main()
 		cin >> cost;
 
 		cout << "the total cost of " << quanity << " " << nameitem << " is " << quanity * cost;
+}
