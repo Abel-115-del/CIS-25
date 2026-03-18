@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int Answer = 0;
+	
+	cout << "Welcome would you like to hear an intresting fact? 1 for yes 2 for no" << endl;
+	cin >> Answer;
+
+	if (Answer == 1) {
+		cout << "The paetorian guard where the roman emporers personal bodyguard sadly they where not good at there job cause has they would depose emperors just for a pay raise " << endl;
+		cout << " would yo like another intresting fact? 1 for yes 2 for no" << endl;
+		cin >> Answer;
+	}
+	
+	if (Answer == 1) {
+		cout << "Mexico City is built on Tenochitlan The home of the Aztec who built it upon a lake after seeing a sigh from there god to settle there" << endl; 
+
+
+	}
+	else {
+		cout << "ok see ya!" << endl;
+
+	}
+
+
+}
