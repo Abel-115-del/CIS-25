@@ -1,0 +1,47 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+
+
+void MENU() {
+    int input;
+    cout << "for to multiply enter 1, 2 to square a number, and 3 to exit" << endl;
+    cin >> input;
+
+    if (input == 1) {
+        
+        int number, number2, answer;
+        cout << " what is the number you would like to multiply" << endl;
+        cin >> number;
+        cout << " what is the number you like to multiply by" << endl;
+        cin >> number2;
+
+        
+        cout << number << " multiplied by " << number2 << " is " << number * number2 << endl;
+    }
+    else if ( input == 2 ) {
+
+
+        
+        int number;
+
+        cout << " what is the number you would like to multiply" << endl;
+        cin >> number;
+        
+
+        cout << number << " squared is " << number * number << endl;
+    }
+    else {
+
+        cout << " bye " << endl;
+
+    }
+}
+int main ()
+{
+    
+    MENU();
+
+
+}
