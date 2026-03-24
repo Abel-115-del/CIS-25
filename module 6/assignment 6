@@ -1,0 +1,71 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+void MENU(){
+    int input;
+    cout << "====== shopping cart ======" << endl;
+    cout << "1. Add" << endl;
+    cout << "2. Veiw checkout" << endl;
+    cout << "3. Exit" << endl;
+
+    cout << "which option would you like?" << endl;
+    cin >> input;
+    class Item {
+    public:
+        string name;
+        double price = 0;
+        int quanity = 0;
+        void saveToFile() {
+            ofstream out("cart.txt");
+            if (out.is_open()) {
+
+                out << name << " , " << price << " , " << quanity << endl;
+                out.close();
+                string line; 
+                
+            }
+
+
+        }
+
+
+    };
+
+    if (input == 1) {
+
+        string item;
+        double cost;
+        int quanity;
+        cout << "what is the item you would like to purchase" << endl;
+        cin >> item;
+        cout << "what is the price" << endl;
+        cin >> cost;
+        cout << "how much of " << item << " would you like?" << endl;
+        cin >> quanity;
+
+        Item cart;
+        cart.name = item;
+        cart.price = cost;
+        cart.quanity = quanity;
+
+
+    }
+    else if (input == 2) {
+
+
+
+
+
+    }
+}
+int main()
+{
+    
+   
+    
+    MENU();
+
+
+}
